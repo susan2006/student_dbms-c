@@ -61,7 +61,7 @@ int main(){
 
 void addRecord(){
     FILE *fp;
-    fp = fopen("student_dbms.txt","ab");
+    fp = fopen("Student_dbms.txt","ab");
 
     Student info;
     char another[5]; 
@@ -97,7 +97,7 @@ void addRecord(){
 
 void searchRecord(){
     FILE *fp;
-    fp = fopen("student_dbms.txt","rb");
+    fp = fopen("Student_dbms.txt","rb");
 
     Student info;
     int searchRollno;
@@ -143,7 +143,7 @@ void searchRecord(){
 
 void displayRecord(){
     FILE *fp;
-    fp = fopen("student_dbms.txt","rb");
+    fp = fopen("Student_dbms.txt","rb");
 
     Student info;
 
@@ -176,7 +176,7 @@ void displayRecord(){
 
 void deleteRecord(){
     FILE *fp, *fp1;
-    fp = fopen("student_dbms.txt","rb");
+    fp = fopen("Student_dbms.txt","rb");
     fp1 = fopen("temp.txt","wb");
 
     Student info;
@@ -216,8 +216,8 @@ void deleteRecord(){
     fclose(fp);
     fclose(fp1);
 
-    remove("student_dbms.txt");
-    rename("temp.txt","student_dbms.txt");
+    remove("Student_dbms.txt");
+    rename("temp.txt","Student_dbms.txt");
 
 }
 
